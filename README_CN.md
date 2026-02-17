@@ -133,7 +133,6 @@ docker-compose up -d
 
 如有问题或建议，请查看项目文档：
 - [INSTALL.md](INSTALL.md) - 安装指南
-- [docs/](docs/) - 用户指南
 
 ---
 

@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  voxcpm-tts:
+    build: .
+    container_name: voxcpm-tts
+    ports:
+      - "7870:7870"
+    volumes:
+      - ./voices:/app/voices
+      - ./lora:/app/lora
+      - huggingface-cache:/root/.cache/huggingface
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=7870
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped
+    command: python web_app.py
+
+volumes:
+  huggingface-cache:

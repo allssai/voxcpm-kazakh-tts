@@ -1,0 +1,43 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python files
+*.py text eol=lf
+*.pyx text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf
+
+# Configuration files
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+
+# Audio files (binary)
+*.wav binary
+*.mp3 binary
+*.flac binary
+*.ogg binary
+
+# Model files (binary)
+*.pth binary
+*.pt binary
+*.ckpt binary
+*.safetensors binary
+*.bin binary
+
+# Git LFS tracking for large files
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.ckpt filter=lfs diff=lfs merge=lfs -text

@@ -39,7 +39,7 @@ A multilingual text-to-speech system based on VoxCPM 1.5, with LoRA fine-tuning 
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/voxcpm-kazakh-tts.git
+git clone https://github.com/allssai/voxcpm-kazakh-tts
 cd voxcpm-kazakh-tts
 ```
 

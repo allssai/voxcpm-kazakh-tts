@@ -131,7 +131,6 @@ This project is based on VoxCPM 1.5 and follows the corresponding open-source li
 
 For questions or suggestions, please check the project documentation:
 - [INSTALL.md](INSTALL.md) - Installation guide
-- [docs/](docs/) - User guides
 
 ---
 

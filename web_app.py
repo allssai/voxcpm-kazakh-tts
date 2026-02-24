@@ -1462,4 +1462,4 @@ with gr.Blocks(title="多语言 TTS 引擎 / Көптілді TTS жүйесі",
 
 if __name__ == "__main__":
     demo.queue()
-    demo.launch(server_name="0.0.0.0", server_port=7860, share=False)
+    demo.launch(server_name="127.0.0.1", server_port=7860, share=False)
